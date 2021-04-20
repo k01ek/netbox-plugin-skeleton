@@ -96,3 +96,12 @@ Password:
 Password (again): 
 Superuser created successfully.
 ```
+
+### Notes
+If you got the error with git after change plugin name like this:  
+`fatal: unknown index entry format 0x196e0000`  
+use following commands to fix it
+```
+rm -f .git/index
+git reset
+```
