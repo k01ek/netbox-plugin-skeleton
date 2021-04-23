@@ -63,8 +63,10 @@ git commit -m 'init'
 Useful tools for developing the plugin you can find in the develop folder of this repo.
 Use Makefile to run a new development environment with docker in 3 commands. (docker and docker-compose required).   
 
-0. Set python and netbox version in Makefile
+0. Set `PYTHON_VER` and `NETBOX_VER` in Makefile or environment
 ```
+PYTHON_VER?=3.7
+NETBOX_VER?=v2.10.3
 ```
 1. Build netbox container
 ```
