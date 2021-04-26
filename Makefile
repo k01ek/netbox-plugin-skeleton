@@ -47,7 +47,7 @@ makemigrations:
 	docker-compose -f ${COMPOSE_FILE} -p ${BUILD_NAME} down
 
 
-build:
+pbuild:
 	python3 -m pip install --upgrade build
 	python3 -m build
 
