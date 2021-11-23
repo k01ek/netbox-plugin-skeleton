@@ -45,4 +45,4 @@ services:
       - redis-server --appendonly yes --requirepass $$REDIS_PASSWORD  ## $$ because of docker-compose
     env_file: ./dev.env
 volumes:
-  pgdata_netbox_bgp:
+  pgdata_netbox_newplugin:
