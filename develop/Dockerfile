@@ -17,6 +17,8 @@ RUN git clone --single-branch --branch ${netbox_ver} https://github.com/netbox-c
 
 # Work around https://github.com/rq/django-rq/issues/421
 RUN pip install django-rq==2.3.2
+# Work around https://github.com/pallets/markupsafe/issues/284
+RUN pip install markupsafe==2.0.1
 
 # -------------------------------------------------------------------------------------
 # Install Netbox Plugin
